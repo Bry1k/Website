@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    background-image: url('../img/black.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+h1, h2 {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.contact-box .socials {
+    display: flex;
+    justify-content: center; /* Center align social links */
+    gap: 10px; /* Add space between social links */
+}
+
+.contact-box .socials a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #333; /* Dark background for social links */
+    transition: background-color 0.3s;
+}
+
+.contact-box .socials a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
+
+.container .socials {
+    display: flex;
+    justify-content: center; /* Center align social links */
+    gap: 10px; /* Add space between social links */
+}
+
+.container .socials a {
+    text-decoration: none;
+}
+
+.container .socials img {
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.container .socials img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
